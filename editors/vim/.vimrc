@@ -179,13 +179,14 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'altercation/vim-colors-solarized'
+" Plugin 'altercation/vim-colors-solarized'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'majutsushi/tagbar'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
 Plugin 'vim-airline/vim-airline'
-Plugin 'yassinebridi/vim-purpura'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'TroyFletcher/vim-colors-synthwave'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -197,17 +198,13 @@ let g:nerdtree_tabs_open_on_console_startup=1
 " Syntax highlighting
 syntax on
 " colorscheme molokai
-colorscheme purpura
+colorscheme synthwave
 
-" Purpura specific settings
-set background=dark
-set termguicolors
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-let g:airline_theme = 'purpura'
+let g:airline_theme = 'kolor'
+let g:airline_powerline_fonts = 1
 
 " Solarized colorscheme config
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 "
 " Doxygen settings
 let g:DoxygenToolkit_briefTag_pre="\\brief "
