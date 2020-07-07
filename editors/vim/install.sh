@@ -23,7 +23,7 @@ vim +PluginInstall +qall
 if [[ -z $(find "${BUNDLE}/YouCompleteMe/third_party/ycmd" -name "libclang.*") ]]; then
     dotfiles_install_package cmake
     print_info COMPONENT "Building YouCompleteMe.vim"
-    python2 $BUNDLE/YouCompleteMe/install.py --clang-completer
+    python $BUNDLE/YouCompleteMe/install.py --clang-completer --go-completer
 else
     print_info COMPONENT "YouCompleteMe.vim already built"
 fi
