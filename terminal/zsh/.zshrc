@@ -93,4 +93,4 @@ source ${ZSH_FISH_COMPLETIONS}/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # added by travis gem
-[ -f /home/manu343726/.travis/travis.sh ] && source /home/manu343726/.travis/travis.sh
+[ -f /home/andreas/.travis/travis.sh ] && source /home/andreas/.travis/travis.sh
