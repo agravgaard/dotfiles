@@ -1,6 +1,6 @@
 [user]
-	name = Manu343726
-	email = Manu343726@gmail.com
+	name = agravgaard
+	email = andreasga22@gmail.com
 [push]
 	default = simple
 [alias]
@@ -21,4 +21,4 @@
 [difftool]
 	prompt = false
 [github]
-	user = Manu343726
+	user = agravgaard
