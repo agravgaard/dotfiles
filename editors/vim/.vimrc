@@ -200,8 +200,8 @@ syntax on
 try
     colorscheme synthwave
 catch /^Vim\%((\a\+)\)\=:E185/
-    colorscheme molokai
     " deal with it
+    " colorscheme some_default
 endtry
 
 let g:airline_theme = 'kolor'
