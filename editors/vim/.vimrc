@@ -197,8 +197,12 @@ let g:nerdtree_tabs_open_on_console_startup=1
 
 " Syntax highlighting
 syntax on
-" colorscheme molokai
-colorscheme synthwave
+try
+    colorscheme synthwave
+catch /^Vim\%((\a\+)\)\=:E185/
+    colorscheme molokai
+    " deal with it
+endtry
 
 let g:airline_theme = 'kolor'
 let g:airline_powerline_fonts = 1
