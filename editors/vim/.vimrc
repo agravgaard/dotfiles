@@ -245,8 +245,7 @@ endtry
 let g:airline_theme = 'kolor'
 let g:airline_powerline_fonts = 1
 
-" Solarized colorscheme config
-" let g:solarized_termcolors=256
+nmap <F8> :TagbarToggle<CR>
 
 let g:deoplete#enable_at_startup = 1
 
