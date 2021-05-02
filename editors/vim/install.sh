@@ -8,6 +8,8 @@ BUNDLE="${DOTVIM}/bundle"
 
 # Install vim with python support
 dotfiles_install_package vim
+# for deoplete:
+dotfiles_install_package python-pynvim
 
 # Install config
 dotfiles_install_component .vim $HOME/.vim
@@ -23,7 +25,7 @@ vim +PluginInstall +qall
 if [[ -z $(find "${BUNDLE}/YouCompleteMe/third_party/ycmd" -name "libclang.*") ]]; then
     dotfiles_install_package cmake
     print_info COMPONENT "Building YouCompleteMe.vim"
-    python $BUNDLE/YouCompleteMe/install.py --clang-completer --go-completer
+    python $BUNDLE/YouCompleteMe/install.py --clangd-completer --go-completer
 else
     print_info COMPONENT "YouCompleteMe.vim already built"
 fi

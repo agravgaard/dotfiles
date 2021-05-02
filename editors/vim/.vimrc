@@ -212,7 +212,13 @@ Plugin 'vim-scripts/opencl.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 " Code-completion for a variety of languages as well as paths/files
-Plugin 'Shougo/deoplete.vim'
+if has('nvim')
+  Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plugin 'Shougo/deoplete.nvim'
+  Plugin 'roxma/nvim-yarp'
+  Plugin 'roxma/vim-hug-neovim-rpc'
+endif
 
 " Make vim look absolutely amazing:
 Plugin 'vim-airline/vim-airline'
@@ -241,7 +247,9 @@ let g:airline_powerline_fonts = 1
 
 " Solarized colorscheme config
 " let g:solarized_termcolors=256
-"
+
+let g:deoplete#enable_at_startup = 1
+
 " Doxygen settings
 let g:DoxygenToolkit_briefTag_pre="\\brief "
 let g:DoxygenToolkit_paramTag_pre="\\param "
